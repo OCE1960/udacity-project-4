@@ -1,7 +1,13 @@
 <paste log output from Kubernetes-mediated prediction, here>
+$ ./run_kubernetes.sh
 pod/udacity-microservice created
 NAME                   READY   STATUS              RESTARTS   AGE
 udacity-microservice   0/1     ContainerCreating   0          0s
 Forwarding from 127.0.0.1:5000 -> 5000
 Forwarding from [::1]:5000 -> 5000
 Handling connection for 5000
+
+$ ./make_prediction.sh
+Port: 5000
+URL: http://localhost:5000/predict
+{"prediction":[20.35373177134412]}
