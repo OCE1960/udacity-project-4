@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-PORT=8000
+PORT=5000
 echo "Port: $PORT"
+echo "URL: http://localhost:$PORT/predict"
 
 # POST method predict
 curl -d '{  

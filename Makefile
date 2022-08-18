@@ -7,13 +7,14 @@
 
 setup:
 	# Create python virtualenv & source it
-	# source ~/.devops/bin/activate
-	python3 -m venv ~/.devops
+	# source ~/.udacity-project-4/bin/activate
+	python3 -m venv ~/.udacity-project-4
 
 install:
 	# This should be run from inside a virtualenv
+	# pip install pip==21.3.1 &&\
 	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	pip install -r requirements.txt
 
 test:
 	# Additional, optional, tests could go here
